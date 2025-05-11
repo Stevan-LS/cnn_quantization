@@ -46,12 +46,65 @@ The project is organized into four main exercises:
 - Quantized models demonstrated excellent performance-to-size ratio
 - Dropout regularization proved effective at preventing overfitting
 
-## Usage
-To run the notebook:
+## Installation
 
-1. Install the required dependencies:
+### Prerequisites
+- Python 3.8 or higher
+- CUDA-capable GPU (recommended for faster training)
+
+### Setup
+1. Clone the repository:
 ```bash
-pip install torch torchvision matplotlib numpy pillow
+git clone https://github.com/yourusername/cnn_quantization.git
+cd cnn_quantization
 ```
 
+2. Create a virtual environment (recommended):
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+3. Install the required dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+### Running the Exercises
+Each exercise is contained in its own Jupyter notebook:
+
+1. CNN Implementation:
+```bash
+jupyter notebook 1_cnn_implementation.ipynb
+```
+
+2. Model Quantization:
+```bash
+jupyter notebook 2_model_quantization.ipynb
+```
+
+3. Pre-trained Model Classification:
+```bash
+jupyter notebook 3_pretrained_classification.ipynb
+```
+
+4. Transfer Learning:
+```bash
+jupyter notebook 4_transfer_learning.ipynb
+```
+
+## Project Dependencies
+The project uses the following key dependencies:
+- PyTorch >= 1.9.0
+- torchvision >= 0.10.0
+- matplotlib >= 3.4.0
+- numpy >= 1.20.0
+- pillow >= 8.2.0
+- jupyter >= 1.0.0
+
+For a complete list of dependencies, see `requirements.txt`.
+
+## Author
 Stevan Le Stanc
